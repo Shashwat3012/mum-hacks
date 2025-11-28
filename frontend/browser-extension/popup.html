@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Misinformation Radar</title>
+        <link rel="stylesheet" href="popup.css" />
+    </head>
+
+    <body>
+        <div class="popup-container">
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <div class="title">Misinformation Radar</div>
+                <button id="historyBtn" class="icon-btn" title="History">
+                    📜
+                </button>
+                <button id="expandBtn" class="icon-btn" title="Expand">
+                    ⤢
+                </button>
+            </div>
+
+            <!-- Chat / Messages -->
+            <div id="chat" class="chat-box"></div>
+
+            <!-- Metadata -->
+            <div id="resultMeta" class="meta"></div>
+
+            <!-- Buttons -->
+            <div class="actions">
+                <button id="checkBtn" class="btn-primary">
+                    Check Selection
+                </button>
+                <button id="copyBtn" class="btn-secondary">Copy</button>
+            </div>
+
+            <!-- Drawer -->
+            <div id="historyDrawer" class="drawer">
+                <div class="drawer-header">
+                    <h2>History</h2>
+                    <button id="closeDrawer" class="icon-btn">✕</button>
+                </div>
+                <div id="historyList"></div>
+            </div>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
