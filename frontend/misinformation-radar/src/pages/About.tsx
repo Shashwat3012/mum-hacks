@@ -8,7 +8,7 @@ const About = () => {
         {/* Header */}
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-            About Misinformation Radar
+            About MissInformation
           </h1>
           <p className="text-lg text-muted-foreground">
             Fighting misinformation, one fact-check at a time.

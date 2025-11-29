@@ -17,7 +17,7 @@ const Privacy = () => {
           </CardHeader>
           <CardContent className="space-y-4 text-muted-foreground">
             <p>
-              Misinformation Radar is committed to protecting your privacy. We believe in transparency
+              MissInformation is committed to protecting your privacy. We believe in transparency
               and your right to know how your information is used.
             </p>
           </CardContent>

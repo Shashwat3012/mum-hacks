@@ -8,7 +8,7 @@ const Map = () => {
         {/* Header */}
         <div className="space-y-4">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-            Misinformation Heatmap
+            Missnformation Heatmap
           </h1>
           <p className="text-lg text-muted-foreground">
             Visualize misinformation hotspots across regions. Larger circles indicate higher spread intensity.

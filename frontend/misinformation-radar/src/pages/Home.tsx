@@ -11,7 +11,7 @@ const Home = () => {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="space-y-4">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground">
-              Misinformation Radar
+              MissInformation
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
               Fact-check as fast as messages spread.

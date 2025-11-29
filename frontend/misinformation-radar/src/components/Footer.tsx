@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2 text-card-foreground">
             <Radio className="h-5 w-5 text-primary" />
-            <span className="font-semibold">Misinformation Radar</span>
+            <span className="font-semibold">MissInformation</span>
           </div>
           
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
@@ -18,7 +18,7 @@ const Footer = () => {
             <Link to="/privacy" className="hover:text-foreground transition-colors">
               Privacy
             </Link>
-            <span>© 2024 Misinformation Radar</span>
+            <span>© 2025 MissInformation</span>
           </div>
         </div>
       </div>
