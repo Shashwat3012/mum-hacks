@@ -5,6 +5,7 @@ import typing
 import uvicorn
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import JSONResponse
+from fastapi.middleware.cors import CORSMiddleware
 import google.generativeai as genai
 from google.generativeai.types import HarmCategory, HarmBlockThreshold
 from dotenv import load_dotenv
@@ -13,6 +14,20 @@ from dotenv import load_dotenv
 load_dotenv()
 
 app = FastAPI(title="Deepfake Detection API", version="1.0")
+
+# CORS settings
+origins = [
+    "http://localhost:8081",
+    "http://127.0.0.1:8081",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,        # or ["*"] during local dev if you prefer
+    allow_credentials=True,
+    allow_methods=["*"],          # allow POST, GET, etc.
+    allow_headers=["*"],          # allow all headers (including Content-Type)
+)
 
 @app.get("/")
 async def hello():
@@ -115,4 +130,4 @@ async def detect_deepfake(video: UploadFile = File(...)):
             os.remove(temp_filename)
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=3000)
