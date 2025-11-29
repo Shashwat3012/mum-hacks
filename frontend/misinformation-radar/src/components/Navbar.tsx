@@ -12,6 +12,7 @@ const Navbar = () => {
     { path: '/trends', label: 'Trends' },
     { path: '/check', label: 'Check' },
     { path: '/map', label: 'Map' },
+    {path: '/check-deepfake', label: 'Check Deepfake' },
     { path: '/about', label: 'About' },
   ];
 

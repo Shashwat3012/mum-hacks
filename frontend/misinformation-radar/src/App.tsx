@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Trends from "./pages/Trends";
 import TopicDetail from "./pages/TopicDetail";
 import Check from "./pages/Check";
+import CheckDeepfake from "./pages/CheckDeepfake";
 import Map from "./pages/Map";
 import About from "./pages/About";
 import Privacy from "./pages/Privacy";
@@ -30,6 +31,7 @@ const App = () => (
               <Route path="/trends" element={<Trends />} />
               <Route path="/topic/:keyword" element={<TopicDetail />} />
               <Route path="/check" element={<Check />} />
+              <Route path="/check-deepfake" element={<CheckDeepfake />} />
               <Route path="/map" element={<Map />} />
               <Route path="/about" element={<About />} />
               <Route path="/privacy" element={<Privacy />} />
