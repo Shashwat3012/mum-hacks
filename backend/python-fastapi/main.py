@@ -26,8 +26,6 @@ genai.configure(api_key=GOOGLE_API_KEY)
 # 1.5 Pro is excellent for video analysis window and reasoning.
 MODEL_NAME = os.getenv('MODEL_NAME')
 
-print("Model name:", MODEL_NAME, "api key:", GOOGLE_API_KEY)
-
 def upload_to_gemini(path, mime_type=None):
     """Uploads the file to Gemini and waits for processing."""
     file = genai.upload_file(path, mime_type=mime_type)
